@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index-style.css">
+</head>
+<body>
+    <div class="all-container">
+        <div class="user-type-container">
+            <span>Seleccione su tipo de usuario</span>
+            <div class="rdb-user-type">
+            
+                <label for="Docente">Docente</label>
+                <input type="radio" name="tipoUsuario" id="doc" value="Docente">
+            
+                <label for="Estudiante">Estudiante</label>
+                <input type="radio" name="tipoUsuario" id="est" value="Estudiante">
+            
+                <label for="Usuario Externo">Usuario Externo</label>
+                <input type="radio" name="tipoUsuario" id="usuExt" value="Usuario Externo">
+            </div>
+        </div>
+        
+            <div class="books">
+                <span>Seleccione el tipo de libro que prestara:</span>
+                <select name="" id="select">
+                    <option value="">-- Seleccione el tipo de libro</option>
+                    <option value="Ciencias Básicas y Tecnología">Ciencias Násicas y Tecnología</option>
+                    <option value="Tesis">Tesis</option>
+                    <option value="Obras Literarias">Obras Literarias</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                <button id="prestar">Prestar Libro</button>
+            </div>
+        
+            <table id="table">
+                
+            </table>
+        
+    </div>
+    
+    <script src="js/javascript.js"></script>
+</body>
+</html>
+
+<!-- A. Una biblioteca solicita un script para gestionar los prestamos de los libros para determinar y mostrar la fecha de devolución dependiendo del usuario y las políticas de préstamo que son:
+
+    Los libros de ciencias básicas y tecnología se prestan por tres días
+    Las tesis se prestan por quince días
+    Las obras literarias por una semana
+    Los demás tipos por dos días
+
+    Los usuarios con carnet de estudiante pueden prestar libros según las políticas establecidas
+    Los usuarios con carnet de docente duplican la cantidad de días.
+    Los otros usuarios sólo pueden hacer préstamo interno.
+
+Por cada usuario que haga un préstamo se debe organizar en una tabla la información
+Tipo de libro, tipo de usuario, fecha de devolución. -->
